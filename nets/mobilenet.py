@@ -101,9 +101,9 @@ class MobileNetV2(nn.Module):
         cfgs_skip = [
             # input_channel, exp_size, out_channel, kernel, stride, size
             [16, 6, 32, 3, 1, 28],
-            [16, 6, 64, 3, 1, 14],
-            [16, 6, 160, 3, 1, 7],
-            [32, 6, 64, 3, 1, 14]
+            [16, 5, 64, 3, 1, 14],
+            [16, 4, 160, 3, 1, 7],
+            [32, 3, 64, 3, 1, 14]
         ]
         self.cfgs_skipblocks = cfgs_skip
 
